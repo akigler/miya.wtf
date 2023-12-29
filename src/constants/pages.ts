@@ -65,6 +65,16 @@ const Pages: Record<string, Page> = {
       height: 475,
     },
   },
+  minter: {
+    id: 'nft',
+    path: '/nft',
+    label: 'Miya NFT',
+    icon: ExecutableIcon[0],
+    minSize: {
+      width: 600,
+      height: 475,
+    },
+  },
 }
 
 export default Pages

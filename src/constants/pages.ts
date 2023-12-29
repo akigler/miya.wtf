@@ -65,7 +65,7 @@ const Pages: Record<string, Page> = {
       height: 475,
     },
   },
-  minter: {
+  nft: {
     id: 'nft',
     path: '/nft',
     label: 'Miya NFT',

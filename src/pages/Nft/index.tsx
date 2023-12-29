@@ -5,15 +5,13 @@ import { useAppDispatch } from '@/store/hooks'
 import { closeWindow, minimizeWindow } from '@/store/windows/actions'
 import { useFullscreen } from '@/store/windows/hooks'
 
-import Home from '../Home/page'
-
-const page = Pages.home
+const page = Pages.nft
 
 export default function MintPage() {
-  const [fullscreen, toggleFullscreen] = useFullscreen('home')
+  const [fullscreen, toggleFullscreen] = useFullscreen('nft')
   const dispatch = useAppDispatch()
-  const close = () => dispatch(closeWindow({ value: 'home' }))
-  const minimize = () => dispatch(minimizeWindow({ value: 'home' }))
+  const close = () => dispatch(closeWindow({ value: 'nft' }))
+  const minimize = () => dispatch(minimizeWindow({ value: 'nft' }))
 
   return (
     <WindowWrapper>
@@ -34,7 +32,6 @@ export default function MintPage() {
       >
         {page?.label}
       </TitleBar>
-      <Home />
     </WindowWrapper>
   )
 }
